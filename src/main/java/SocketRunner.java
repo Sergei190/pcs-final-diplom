@@ -12,7 +12,7 @@ public class SocketRunner {
     public static void main(String[] args) throws IOException {
         InetAddress inetAddress = Inet4Address.getByName("localhost");
 
-        try (Socket socket = new Socket(inetAddress, 8080);
+        try (Socket socket = new Socket(inetAddress, 8989);
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true)) {
             out.println(request);

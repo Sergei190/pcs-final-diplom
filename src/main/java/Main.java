@@ -5,7 +5,7 @@ import java.io.*;
 import java.net.ServerSocket;
 
 public class Main {
-    static final int SERVER_PORT = 8080;
+    static final int SERVER_PORT = 8989;
 
     public static void main(String[] args) throws Exception {
         SearchEngine engine = new BooleanSearchEngine(new File("pdfs"));
